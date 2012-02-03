@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Andres Martinez Mobile App</title><!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Mobile IE needs ClearType for smoothing fonts -->
+    <meta http-equiv="cleartype" content="on"><!-- StyleSheets under here -->
+    <style>
+    label.error {display:block; width:100%; text-align:center; background:blue; color:red; text-shadow: 1px 1px 2px black;}
+    ::-webkit-input-placeholder {color:blue}
+    p.message1 {background: #4182B5; padding:5px; color:#9BE2FC; text-shadow: 1px 2px 2px black; opacity:0.5}
+    .pane, .pane > .back, .pane > .cont { display: block; }
+    .pane {position: relative;}
+    .pane > .back {position: absolute;width: 100%; height: 100%;top: auto; bottom: auto; left: auto; right: auto;}
+    .pane > .cont {color:#9BE2FC; text-shadow: 1px 2px 2px black;text-align: center;padding: 5px;position: relative;z-index: 10;}
+    div .errormsg {color:red; text-shadow: 1px 1px 1px black}
+    </style>
+    
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="CSS/jquery.mobile-1.0b3.css" type="text/css">
+    <link rel="stylesheet" href="CSS/jquery.mobile.datebox.css" type="text/css">
+    <link rel="stylesheet" href="CSS/Styles.css" type="text/css">
+    
+    <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+</script>
+</head>
+
+<body>
+
+    <div data-role="page" id="Abbs" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>A &amp; M Abbs</h1>
+        </div>
+        
+                
+                <div >
+                    <img src="img/A and M.jpg"  title="" id="logo"/>
+               </div>
+
+
+
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true">
+                <li>
+                    <img src="img/SitUps.png">
+
+                    <h3>Sit Ups</h3>
+
+                    <p>First Step To Riped Abbs</p>
+                </li>
+
+                <li>
+                    <img src="img/SideBends.png">
+
+                    <h3>Side Bends</h3>
+
+                    <p>Getting Rid Of Love Handles</p>
+                </li>
+
+                <li>
+                    <img src="img/BallCruch.png">
+
+                    <h3>Ball Cruch</h3>
+
+                    <p>Easy On the Back</p>
+                </li>
+
+                <li>
+                    <img src="img/BikeExercise.png">
+
+                    <h3>Bike Exercise</h3>
+
+                    <p>Tone Those Legs</p>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <center><p>&copy; 2011 - A&M Ultimate Workout</p></center>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
