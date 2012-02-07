@@ -9,11 +9,14 @@
 	<link rel="stylesheet" href="CSS/jquery.mobile-1.0b3.css" type="text/css">
     <link rel="stylesheet" href="CSS/jquery.mobile.datebox.css" type="text/css">
     <link rel="stylesheet" href="CSS/Styles.css" type="text/css">
+    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+
 
 	
 	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+	<script src="http://vjs.zencdn.net/c/video.js"></script>
 	
 </head> 
   <body>
@@ -71,8 +74,11 @@
          
 
       
-         
-         
+          <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" poster="my_video_poster.png" data-setup="{}">
+             <source src="ItWorks.mp4" type='video/mp4'>
+            <source src="my_video.webm" type='video/webm'>
+           </video>
+
          
          
          
