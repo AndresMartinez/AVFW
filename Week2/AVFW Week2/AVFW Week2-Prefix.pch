@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AVFW Week2' target in the 'AVFW Week2' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

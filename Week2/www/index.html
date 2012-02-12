@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        
+     
+            <link rel="stylesheet" href="jquery/jquery.mobile-1.0.1.css" type="text/css">
+            
+     <link rel="stylesheet" type="text/css" href="style.css" />
+     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+     <link rel="stylesheet" href="CSS/jquery.mobile-1.0b3.css" type="text/css">
+     <link rel="stylesheet" href="CSS/jquery.mobile.datebox.css" type="text/css">
+     <link rel="stylesheet" href="CSS/Styles.css" type="text/css">
+     <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+                           
+            
+        
+   
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+        <script src="http://vjs.zencdn.net/c/video.js"></script>    
+        
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            
+            // Wait for PhoneGap to load
+            //
+            document.addEventListener("deviceready", onDeviceReady, false);
+            
+            var watchID = null;
+            
+            // PhoneGap is ready
+            //
+            function onDeviceReady() {
+                // Update every 3 seconds
+                var options = { frequency: 3000 };
+                watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
+            }
+            
+            // onSuccess Geolocation
+            //
+            function onSuccess(position) {
+                var element = document.getElementById('geolocation');
+                element.innerHTML = 'Latitude: '  + position.coords.latitude      + '<br />' +
+                'Longitude: ' + position.coords.longitude     + '<br />' +
+                '<hr />'      + element.innerHTML;
+            }
+            
+            // onError Callback receives a PositionError object
+            //
+            function onError(error) {
+                alert('code: '    + error.code    + '\n' +
+                      'message: ' + error.message + '\n');
+            }
+            
+            </script>
+        
+        
+        
+        <script type="text/javascript" charset="utf-8">
+            
+            // Wait for PhoneGap to load
+            //
+            document.addEventListener("deviceready", onDeviceReady, false);
+            
+            // PhoneGap is ready
+            //
+            function onDeviceReady() {
+                // Empty
+            }
+            
+            // alert dialog dismissed
+            function alertDismissed() {
+                // do something
+            }
+            
+            // Show a custom alert
+            //
+            function showAlert() {
+                navigator.notification.alert(
+                                             'Hey the alert works!',  // message
+                                             alertDismissed,         // callback
+                                             'Notification/Alert',            // title
+                                             'Done'                  // buttonName
+                                             );
+            }
+            
+            </script>
+    </head>
+    <body>
+        
+        
+        <div data-role="page" id="HomePage" class="ui-body-c">
+         	<div data-role="header" data-position="fixed" data-theme="b">
+                <h1>HomePage</h1>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            <div data-role="content" class="ui-body-a"  data-theme="c"> 
+                <h2>Developer info:</h2>
+                <ul>NAME:Andres Martinez</ul>
+                <ul>CLASS:AVFW Jan-2012</ul>
+            </div>
+            
+            
+            <div data-role="content">
+                <p id="geolocation"> Geolocation is Above...</p>
+                
+                
+                <p><a href="#" onclick="showAlert(); return false;" data-role="button">Click For Notification </a></p>
+            </div>
+            
+            
+            <div data-role="content"> 
+                <h2>The Cruds</h2>
+                <ul>
+                    <p>New Crud App</p>
+                    <p><a href="CrudApp/index.html" data-role="button" data-theme="b">CrudApp</a></p>
+                </ul>
+            </div>
+            
+            
+            <div data-role="content">
+                
+                <ul>
+                    <p>Old Crud App</p>
+                    <p><a href="CrudApp/indexold.html"  data-role="button" data-theme="b">Old Crud</a></p>
+                </ul>
+                
+            </div>
+            
+            
+            <div data-role="content">
+                <h2>Discussion Post</h2>
+                <p><a href="CrudApp/Diss1.html" data-role="button" data-theme="a">Discussion Week1</a></p>
+                <p><a href="CrudApp/Diss2.html" data-role="button" data-theme="a">Discussion Week2</a></p>
+                <p><a href="" data-role="button" data-theme="a">Discussion Week3</a></p>
+                <p><a href="" data-role="button" data-theme="a">Discussion Week4</a></p>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            <div>
+                <h3>HTML5:</h3>
+                <video width="320" height="240" controls>
+                    <source src="Video/ItWorks.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="Video/ItWorks.iphone.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="Video/ItWorks.ipad.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                <source src="Video/ItWorks.webm" type='video/webm; codecs="vp8, vorbis"'>
+                                    <source src="Video/ItWorks.theoa.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+                                        </video>         
+                
+            </div>
+            
+ 
+            
+            <div>
+                <h3>Audio:</h3>
+                <audio controls>
+                    <source src="Audio/AudioWorks.mp3" type="audio/mp3" />
+                    <source src="Audio/AudioWorks.ogg" type="audio/ogg" />
+                </audio>
+                
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+            <div data-role="footer" data-position="fixed" data-theme="b">
+                <center><p>&copy; HomePage</p></center>
+            </div>
+            
+        </div>
+        
+         
+    </body>
+</html>
+
