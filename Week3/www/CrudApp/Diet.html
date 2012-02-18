@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Andres Martinez Mobile App</title><!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Mobile IE needs ClearType for smoothing fonts -->
+    <meta http-equiv="cleartype" content="on"><!-- StyleSheets under here -->
+    <style>
+    label.error {display:block; width:100%; text-align:center; background:blue; color:red; text-shadow: 1px 1px 2px black;}
+    ::-webkit-input-placeholder {color:blue}
+    p.message1 {background: #4182B5; padding:5px; color:#9BE2FC; text-shadow: 1px 2px 2px black; opacity:0.5}
+    .pane, .pane > .back, .pane > .cont { display: block; }
+    .pane {position: relative;}
+    .pane > .back {position: absolute;width: 100%; height: 100%;top: auto; bottom: auto; left: auto; right: auto;}
+    .pane > .cont {color:#9BE2FC; text-shadow: 1px 2px 2px black;text-align: center;padding: 5px;position: relative;z-index: 10;}
+    div .errormsg {color:red; text-shadow: 1px 1px 1px black}
+    </style>
+    
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="CSS/jquery.mobile-1.0b3.css" type="text/css">
+    <link rel="stylesheet" href="CSS/jquery.mobile.datebox.css" type="text/css">
+    <link rel="stylesheet" href="CSS/Styles.css" type="text/css">
+    
+    <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+</script>
+</head>
+
+<body>
+
+
+    <div data-role="page" id="Diet" data-theme="b" data-add-back-btn="true">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>A &amp; M Diet</h1>
+        </div>
+        
+                
+                <div >
+                    <img src="img/A and M.jpg"  title="" id="logo"/>
+               </div>
+
+
+
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true">
+                <li>
+                    <img src="img/EatingHappy.png">
+
+                    <h3>Eating Happy</h3>
+
+                    <p>Diets Must be Fun</p>
+                </li>
+
+                <li>
+                    <img src="img/PlentyofWater.png">
+
+                    <h3>Plenty of Water</h3>
+
+                    <p>Staying Hydrated is Important</p>
+                </li>
+
+                <li>
+                    <img src="img/ProtienShakes.png">
+
+                    <h3>Protien Shakes</h3>
+
+                    <p>Protien Bulids Muscle</p>
+                </li>
+
+                <li>
+                    <img src="img/EatingHealthy.png">
+
+                    <h3>Eating Healthy</h3>
+
+                    <p>Not Just for Today, For Life.</p>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <center><p>&copy; 2011 - A&M Ultimate Workout</p></center>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
